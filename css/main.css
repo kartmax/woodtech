@@ -444,7 +444,7 @@ input, textarea {
    background-color: rgba(32, 35, 40, 0.9);
    border-radius: 0 calc(var(--radius) * 2);
    padding: 15px 20px;
-   margin-top: calc(20px + (35 - 20) * ((100vw - 320px) / (1320 - 320)));;
+   margin-top: calc(20px + (35 - 20) * ((100vw - 320px) / (1320 - 320)));
 }
 
 [data-animate] {
