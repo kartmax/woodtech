@@ -26,7 +26,7 @@
 	--light-disabled: #D8DADE;
 	--light-div: #E7E7E7;
 	--middle-gray: rgba(174, 196, 211, 0.7);
-	--text-light: #999999;
+	--text-light: #999;
    --address-color-text: #ADB2BB;
    
 	--regular-text: 1rem;
@@ -549,13 +549,11 @@ input, textarea {
 
 /*  ------------------------------ HOME-CALLBACK ------------------------------ */
 .home-callback {
-   --padding : calc(40px + (50 - 40) * ((100vw - 320px) / (1320 - 320)));
    z-index: 1;
    position: relative;
    background-color: var(--deep);
    color: var(--dark-header);
-   padding-top: var(--padding);
-   padding-bottom: var(--padding);
+   padding-block: calc(40px + (50 - 40) * ((100vw - 320px) / (1320 - 320)));
 }
 .home-callback__header {
    display: inline-block;
@@ -762,9 +760,7 @@ input, textarea {
 
 /* ------------------------------------- ADVANTAGES ------------------------------------- */
 .advantages {
-   --padding: calc(50px + (80 - 50) * ((100vw - 320px) / (1320 - 320)));
-   padding-top: var(--padding);
-   padding-bottom: var(--padding);
+   padding-block: calc(50px + (80 - 50) * ((100vw - 320px) / (1320 - 320)));
 }
 .advantages-slider-wrapper {
    text-align: center;
@@ -868,4 +864,6 @@ input, textarea {
    font-size: var(--small-text);
    margin-bottom: 6px;
 }
+
+/* ------------------------------------- OUR PARTNERS ------------------------------------- */
 
