@@ -980,10 +980,7 @@ input, textarea {
 
 .blog-item__bg_img {
    z-index: 1;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
+   height: 100%;
    position: absolute;
    top: 50%;
    left: 50%;
