@@ -143,9 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
    //=====================================================
-   //==================== home-slider ====================
+   //==================== SWIPER-SLIDERS ====================
    //=====================================================
 
+   // home-slider
    const homeSlider = new Swiper('.home-slider', {
       speed : 800,
       effect : 'fade',
@@ -175,6 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
       runCallbacksOnInit : true
    });
 
+   // advantages-slider
    const advSlider = new Swiper('.advantages-slider', {
       effect : 'fade',
       speed : 1400,
@@ -183,6 +185,39 @@ document.addEventListener('DOMContentLoaded', function() {
          disableOnInteraction : false,
       },
    });
+
+   // our-blog-slider
+   const ourBlogSlider = new Swiper('.our-blog-slider', {
+      speed : 800,
+      lazy: true,
+      keyboard : {
+         enabled : true,
+         onlyInViewport : false
+      },
+      spaceBetween: 20,
+
+      breakpoints: {
+         768: {
+            slidesPerView: 2,
+         },
+         992: {
+            slidesPerView: 3,
+         }
+      },
+
+      pagination: {
+         el: '.our-blog-slider__pagination',
+         clickable: true,
+         bulletClass: 'our-blog-slider__bullet',
+         bulletActiveClass: 'our-blog-slider__bullet-active',
+       },
+     
+   });
+
+   // одинаковая высота слайдов
+   const wrapSlides = document.querySelector('.our-blog-slider__wrapper');
+   const hWrapSlides = wrapSlides.clientHeight;
+   wrapSlides.style.cssText += `--height: ${hWrapSlides}px`;
 
 
    //==================================================================================
