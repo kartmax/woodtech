@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
    //=====================================================
-   //==================== SWIPER-SLIDERS ====================
+   //==================== SWIPER-SLIDERS =================
    //=====================================================
 
    // home-slider
@@ -246,6 +246,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
       item.innerHTML = `${num}${text}`;
    });
+
+
+   //=====================================================
+   //=================== SCROLL TO TOP ===================
+   //=====================================================
+   const scrollUp  = document.getElementById('scroll-up');
+   if(scrollUp) {
+      window.addEventListener('scroll', () => {
+         window.scrollY >= 350 ? scrollUp.classList.add('show-scrollup')
+                               : scrollUp.classList.remove('show-scrollup')
+      })
+
+      scrollUp.addEventListener('click', () => {
+         window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+         })
+      });
+
+   };
 
 
 });

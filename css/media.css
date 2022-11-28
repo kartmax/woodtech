@@ -88,6 +88,11 @@
       margin-right: 10px;
    }
 
+   /* scroll up */
+   .scrollup {
+      --size: 40px;
+   }
+
 }
 
 /* sm <= Medium (md) */
