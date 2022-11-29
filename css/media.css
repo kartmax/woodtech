@@ -49,9 +49,27 @@
       color: rgba(255, 255, 255, .75);
       background-color: rgba(196, 196, 196, 0.075);
    }
+   .navbar-deep .top-menu {
+      background-color: #DCDCDC;
+   }
+   .navbar-deep .top-menu__link:hover {
+      color: var(--text-color);
+      background-color: #d3d3d3;
+   }
+   .navbar-deep .top-menu__link:focus {
+      color: var(--text-color);
+      outline: 2px solid var(--accent);
+   }
+   .navbar-deep span.top-menu__link, .navbar-deep span.top-menu__link:hover {
+      color: rgba(255, 255, 255, .75);
+      background-color: #555;
+   }
 
    .menu-toggle {
       display: block;
+   }
+   .menu-toggle:focus {
+      outline: 2px solid var(--accent);
    }
 
    .home-callback__list,
