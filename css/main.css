@@ -229,6 +229,26 @@ input, textarea {
    margin-top: var(--margin);
 }
 
+/* for inner page */
+.inner-heading {
+   max-width: 550px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+.inner-heading p {
+   font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1320 - 320)));
+   font-size: .9375rem;
+   color: var(--text-light);
+   line-height: 1.7;
+}
+.section-inner-title {
+   font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1320 - 320)));
+   margin-bottom: calc(20px + (25 - 20) * ((100vw - 320px) / (1320 - 320)));
+   font-weight: 900;
+   text-transform: uppercase;
+}
+
 /* ADRESS LINE */
 .adress-line__wrapper .adress-line {
    color: var(--address-color-text);
@@ -1001,7 +1021,13 @@ input, textarea {
 }
 
 /* ------------------------------------- BLOG-ITEM ------------------------------------- */
-.blog-item {
+.blog-item-noslide {
+   padding-inline: 10px;
+}
+.blog-item-noslide .blog-item__wrapper {
+   height: 100%;
+}
+.blog-item__wrapper {
    height: var(--height); /* значение прокидывается с js */
    border: 1px solid #eee;
    border-radius: var(--radius-style);
@@ -1094,6 +1120,9 @@ input, textarea {
 .blog-item-more {
    padding: 15px;
    grid-template-rows: 1fr;
+   height: var(--height); /* значение прокидывается с js */
+   border: 1px solid #eee;
+   border-radius: var(--radius-style);
 }
 
 .blog-item-more__bg {
@@ -1252,4 +1281,86 @@ input, textarea {
 }
 .show-scrollup {
    bottom: calc(25px + (45 - 25) * ((100vw - 320px) / (1320 - 320)));
+}
+
+
+
+/* ------------------------------------- INNER PAGES ------------------------------------- */
+
+/* ------------------------------------- BLOG COMPANY PAGE ------------------------------------- */
+.blog-company {
+   padding-bottom: calc(40px + (70 - 40) * ((100vw - 320px) / (1320 - 320)));
+}
+
+.blog-company__body {
+   row-gap: 20px;
+   padding-top: calc(10px + (34 - 10) * ((100vw - 320px) / (1320 - 320)));
+   padding-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1320 - 320)));
+}
+
+
+/* ------------------------------------- POST PAGINATION ------------------------------------- */
+.pagination {
+   font-size: .9375rem;
+   line-height: 1;
+   padding-block: 15px;
+}
+.pagination__links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+span.pagination__arrow {
+   color: #C4C4C4;
+}
+a.pagination__arrow {
+   color: #666;
+   text-decoration: none;
+   transition: color var(--transition);
+}
+a.pagination__arrow:hover {
+   color: var(--accent);
+}
+.pagination__prev {
+}
+.pagination__next {
+}
+.pagination__numbers {
+   font-family: var(--userfont-2);
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   color: #666;
+   padding: 10px 15px;
+   text-decoration: none;
+   border-radius: var(--radius-style);
+   transition: background-color var(--transition), color var(--transition);
+}
+a.pagination__numbers:hover {
+   background-color: var(--light-div);
+   color: #666;
+}
+span.pagination__numbers {
+   background-color: var(--accent);
+   color: #fff;
+}
+.pagination__current {
+}
+.pagination_dots {
+}
+
+.screen-reader-text {
+   border: 0;
+   clip: rect(1px,1px,1px,1px);
+   -webkit-clip-path: inset(50%);
+   clip-path: inset(50%);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute!important;
+   width: 1px;
+   word-wrap: normal!important;
 }

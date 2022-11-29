@@ -143,6 +143,12 @@
       min-height: auto;
       flex-direction: row;
    }
+   .item-advantages__desc {
+      display: block;
+   }
+   .advantages-slider-wrapper {
+      display: none;
+   }
    
 
    .our-blog__content {
@@ -151,16 +157,10 @@
       margin-right: auto;
    }
 
-}
-@media (max-width : 767px) {
-
-   .item-advantages__desc {
-      display: block;
+   .blog-company__container {
+      max-width: 100%;
    }
 
-   .advantages-slider-wrapper {
-      display: none;
-   }
 }
 
 /* xs <= Small (sm) */
@@ -174,6 +174,15 @@
    }
    .top-menu {
       right: 45px;
+   }
+   .navbar-deep {
+      left: 0;
+      right: 0;
+      padding-inline: 10px;
+   }
+
+   .blog-company__container {
+      max-width: 390px;
    }
 }
 
@@ -199,7 +208,7 @@
 
 /* Small (sm) */
 @media (min-width : 576px) {
-
+   
 }
 
 /* Medium (md) */
