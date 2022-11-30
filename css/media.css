@@ -168,7 +168,7 @@
    }
    .our-projects__row {
       gap: 10px;
-      grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(230px, 1fr));
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
    }
 
 }
@@ -193,6 +193,16 @@
 
    .blog-company__container {
       max-width: 390px;
+   }
+}
+
+@media (max-width : 490px) {
+   .our-projects__list {
+      gap: 15px;
+   }
+   .our-projects__row {
+      gap: 15px;
+      grid-template: 1fr / 1fr;
    }
 }
 
