@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', function() {
    //=====================================================
    //==================== LOGO ANIMATION =================
    //=====================================================
-   const animateLogoIcon = document.querySelector('.js-animate-logo-icon');
-   gsap.from(animateLogoIcon, {
+   // анимация лого-иконки
+   gsap.from('.js-animate-logo-icon', {
       opacity: 0,
       delay: .9,
       duration: .8,
@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
       y: -3
    })
 
+   // оборачивание всех букв логотипа в span с классом
    const animateElems = document.querySelectorAll('.js-animate');
    animateElems.forEach((elem) => {
       const arrLetter = elem.innerHTML.split('');
@@ -168,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return (Math.random() * (max - min)) + min;
    }
 
+   // анимация букв логотипа
    const titleLetters = document.querySelectorAll('.logo__title .js-animate__letter'),
          subTitleLetters = document.querySelectorAll('.logo__subtitle .js-animate__letter');
    titleLetters.forEach((letter, idx) => {
