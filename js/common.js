@@ -143,6 +143,49 @@ document.addEventListener('DOMContentLoaded', function() {
       };
    });
 
+   //=====================================================
+   //==================== LOGO ANIMATION =================
+   //=====================================================
+   const animateLogoIcon = document.querySelector('.js-animate-logo-icon');
+   gsap.from(animateLogoIcon, {
+      opacity: 0,
+      delay: .9,
+      duration: .8,
+      x: -3,
+      y: -3
+   })
+
+   const animateElems = document.querySelectorAll('.js-animate');
+   animateElems.forEach((elem) => {
+      const arrLetter = elem.innerHTML.split('');
+      elem.innerHTML = '';
+      arrLetter.forEach((letter) => {
+         elem.innerHTML += '<span class="js-animate__letter">' + letter + '</span>'
+      })
+   })
+
+   function random(min, max) {
+      return (Math.random() * (max - min)) + min;
+   }
+
+   const titleLetters = document.querySelectorAll('.logo__title .js-animate__letter'),
+         subTitleLetters = document.querySelectorAll('.logo__subtitle .js-animate__letter');
+   titleLetters.forEach((letter, idx) => {
+      gsap.from(letter, 1, {
+        opacity: 0,
+        scale: .8,
+        rotationY: 180,
+        delay: idx * .1,
+     })
+  })
+   subTitleLetters.forEach((letter, idx) => {
+      gsap.from(letter, 1, {
+        opacity: 0,
+        x: 5,
+        delay: idx * .05,
+     })
+  })
+
 
    //=====================================================
    //==================== SWIPER-SLIDERS =================

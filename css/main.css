@@ -348,14 +348,14 @@ input, textarea {
 .logo__link:hover, .logo__link:focus, .logo__link:active {
    color: #fff;
 }
-.logo__link span {
+.logo__subtitle {
    display: block;
    font-size: 12px;
    font-weight: 300; 
    text-transform: none;
    letter-spacing: 3.4px;
    opacity: .45;
-   margin-left: 22px;
+   margin-left: 25px;
 }
 .logo__link i {
    --size: 15px;
@@ -363,12 +363,26 @@ input, textarea {
    height: var(--size);
    display: inline-block ;
    position: relative;
+   top: 2px;
    border: 2px solid var(--accent);
    border-radius: var(--radius-style);
-   margin-right: 7px;
+   margin-right: 5px;
 }
 .navbar-deep .logo__link {
    color: var(--deep);
+}
+
+/* for animation logo */
+.js-animate-logo-icon {
+   will-change: transform;
+}
+.js-animate {
+   perspective: 2000px;
+}
+span.js-animate__letter {
+   display: inline-block;
+   margin-left: 0;
+   will-change: transform;
 }
 
 
