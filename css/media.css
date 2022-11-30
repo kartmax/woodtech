@@ -163,6 +163,14 @@
       max-width: 100%;
    }
 
+   .our-projects__list {
+      row-gap: 10px;
+   }
+   .our-projects__row {
+      gap: 10px;
+      grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(230px, 1fr));
+   }
+
 }
 
 /* xs <= Small (sm) */
