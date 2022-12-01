@@ -19,10 +19,15 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
    <!-- BOOTSTRAP -->
 
+   <!-- LOZY LOADING IMG -->
+   <link rel="stylesheet" href="libs/progressive-image/dist/progressive-image.css">
+   <script src="libs/progressive-image/dist/progressive-image.js"></script>
+   <!-- / LOZY LOADING IMG -->
+
    <!-- STYLES -->
    <link rel="stylesheet" href="libs/Swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="libs/micromodal/micromodal.css">
-	<link rel="stylesheet" href="css/main.css?v=6">
+	<link rel="stylesheet" href="css/main.css?v=9">
 	<link rel="stylesheet" href="css/media.css">
    <!-- / STYLES -->
 
@@ -31,7 +36,7 @@
    <script src="libs/Swiper/swiper-bundle.min.js" defer></script>
    <script src="libs/micromodal/micromodal.min.js" defer></script>
    <script src="libs/gsap/dist/gsap.min.js" defer></script>
-	<script src="js/common.js?v=6" defer></script>
+	<script src="js/common.js?v=9" defer></script>
    <!-- / JS -->
 </head>
 
@@ -186,8 +191,8 @@
 
                <div class="col-md-4 best-works__item-wrapper">
                   <div class="best-item">
-                     <a href="#" class="best-works__img-wrapper">
-                        <img loading="lazy" src="images/portfolio/interior-4.jpg" alt="Современная гостинная в древесных тонах">
+                     <a href="#" data-href="images/best-works/1.jpg" class="progressive replace best-item__progressive best-works__img-wrapper">
+                        <img src="images/best-works/1-tiny.jpg" class="preview" alt="image" width="20px" height="13px" loading="lazy" />
                      </a>
                      <div class="best-item__content">
                         <div class="adress-line__wrapper">
@@ -200,8 +205,8 @@
 
                <div class="col-md-4 best-works__item-wrapper">
                   <div class="best-item">
-                     <a href="#" class="best-works__img-wrapper">
-                        <img loading="lazy" src="images/portfolio/interior-5.1.jpg" alt="Современная гостинная в древесных тонах">
+                     <a href="#" data-href="images/best-works/2.jpg" class="progressive replace best-item__progressive best-works__img-wrapper">
+                        <img src="images/best-works/2-tiny.jpg" class="preview" alt="image" width="20px" height="13px" loading="lazy" />
                      </a>
                      <div class="best-item__content">
                         <div class="adress-line__wrapper">
@@ -214,8 +219,8 @@
 
                <div class="col-md-4 best-works__item-wrapper">
                   <div class="best-item">
-                     <a href="#" class="best-works__img-wrapper">
-                        <img loading="lazy" src="images/portfolio/interior-3.jpg" alt="Современная гостинная в древесных тонах">
+                     <a href="#" data-href="images/best-works/3.jpg" class="progressive replace best-item__progressive best-works__img-wrapper">
+                        <img src="images/best-works/3-tiny.jpg" class="preview" alt="image" width="20px" height="13px" loading="lazy" />
                      </a>
                      <div class="best-item__content">
                         <div class="adress-line__wrapper">
@@ -418,7 +423,7 @@
                   <div class="blog-item blog-item-more swiper-slide">
                      <div class="blog-item__bg blog-item-more__bg">
                         <img loading="lazy" class="blog-item__bg_img" src="./images/blog/bg-more-link.jpg" alt="background image">
-                        <a href="#" class="blog-item-more__link">Перейти ко всем записям блога</a>
+                        <a href="blog.html" class="blog-item-more__link">Перейти ко всем записям блога</a>
                      </div>
                   </div>
                </div>

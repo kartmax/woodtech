@@ -1,4 +1,6 @@
+// document.addEventListener("DOMContentLoaded", yall);
 document.addEventListener('DOMContentLoaded', function() {
+   // yall();
 
    const keys = {
       ESC: 27

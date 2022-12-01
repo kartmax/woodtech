@@ -1,0 +1,129 @@
+/* main styles */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 120%;
+  line-height: 1.4;
+  color: #444;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+article {
+  max-width: 42em;
+  padding: 0 4em;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 2em 0 0.2em;
+}
+
+p, a {
+  margin-top: 1em;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin: 1em 0 0 2em;
+}
+
+li {
+  margin-top: 0.8em;
+}
+
+pre {
+  white-space: pre;
+  padding: 2px 6px;
+  margin-top: 1.5em;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1em;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #eee;
+}
+
+pre code {
+  padding: 0;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.top {
+  font-size: 0.85em;
+  text-align: right;
+  font-style: italic;
+}
+
+.bgimg {
+  background: url(https://res.cloudinary.com/oworks/image/upload/f_auto/v1593771256/pimage/squirrel) 50% 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: 0.5em;
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
+.bgimg.replace {
+  background-image: url(https://res.cloudinary.com/oworks/image/upload/f_auto,c_scale,w_20/v1593771256/pimage/squirrel);
+}
+
+.primary {
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+.full, .boxout1, .boxout2 {
+  clear: both;
+  width: 100%;
+  box-shadow: 0 3px 4px #000;
+}
+
+@media (min-width: 40em) {
+
+  .boxout1, .boxout2 {
+    clear: both;
+    float: left;
+    width: 22em;
+    margin: 1em 1em 1em -4em;
+  }
+
+  .boxout2 {
+    float: right;
+    margin: 1em -4em 1em 1em;
+  }
+
+}

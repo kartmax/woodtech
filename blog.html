@@ -19,15 +19,20 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
    <!-- / BOOTSTRAP -->
 
+   <!-- LOZY LOADING IMG -->
+   <link rel="stylesheet" href="libs/progressive-image/dist/progressive-image.css">
+   <script src="libs/progressive-image/dist/progressive-image.js"></script>
+   <!-- / LOZY LOADING IMG -->
+
    <!-- STYLES -->
-	<link rel="stylesheet" href="css/main.css?v=6">
+	<link rel="stylesheet" href="css/main.css?v=9">
 	<link rel="stylesheet" href="css/media.css">
    <!-- / STYLES -->
 
    <!-- JS --> 
    <script src="libs/inert_js/inert.js" defer></script>
    <script src="libs/gsap/dist/gsap.min.js" defer></script>
-	<script src="js/common.js?v=6" defer></script>
+	<script src="js/common.js?v=9" defer></script>
     <!-- / JS --> 
 </head>
 
@@ -100,7 +105,9 @@
                <div class="blog-item__wrapper">
                   <div class="blog-item__bg">
                      <span class="blog-item__data"><span>12</span> июля</span>
-                     <img loading="lazy" class="blog-item__bg_img" src="./images/blog/1.jpg" alt="blog image">
+                     <a href="./images/blog/1.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
+                        <img src="./images/blog/1-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                   <div class="blog-item__body">
                      <div class="blog-item__text">
@@ -116,7 +123,9 @@
                <div class="blog-item__wrapper">
                   <div class="blog-item__bg">
                      <span class="blog-item__data"><span>02</span> июля</span>
-                     <img loading="lazy" class="blog-item__bg_img" src="./images/blog/2.jpg" alt="blog image">
+                     <a href="./images/blog/2.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
+                        <img src="./images/blog/2-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                   <div class="blog-item__body">
                      <div class="blog-item__text">
@@ -132,7 +141,9 @@
                <div class="blog-item__wrapper">
                   <div class="blog-item__bg">
                      <span class="blog-item__data"><span>15</span> сентября</span>
-                     <img loading="lazy" class="blog-item__bg_img" src="./images/blog/3.jpg" alt="blog image">
+                     <a href="./images/blog/3.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
+                        <img src="./images/blog/3-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                   <div class="blog-item__body">
                      <div class="blog-item__text">
@@ -148,7 +159,9 @@
                <div class="blog-item__wrapper">
                   <div class="blog-item__bg">
                      <span class="blog-item__data"><span>10</span> ноября</span>
-                     <img loading="lazy" class="blog-item__bg_img" src="./images/blog/4.jpg" alt="blog image">
+                     <a href="./images/blog/4.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
+                        <img src="./images/blog/4-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                   <div class="blog-item__body">
                      <div class="blog-item__text">

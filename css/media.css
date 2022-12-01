@@ -15,7 +15,19 @@
    .home-callback__list li {
       width: 49%;
    }
+}
+@media (max-width : 1199px) {
+   .best-works__img-wrapper {
+      height: 190px;
+   }
 
+   .blog-item__wrapper {
+      grid-template-rows: 150px 1fr;
+   }
+
+   .our-projects__row {
+      grid-auto-rows: 190px;
+   }
 }
 
 /* md <= Large (lg) */
@@ -85,6 +97,10 @@
       text-align: center;
    }
 
+   .best-works__img-wrapper {
+      height: 140px;
+   }
+
    .item-advantages {
       align-items: center;
       background-color: var(--light-bg);
@@ -99,7 +115,6 @@
       min-height: 35px;
    }
    .item-advantages__desc
-   /* .item-advantages__more { */
     {
       display: none;
    }
@@ -113,6 +128,18 @@
       --size: 40px;
    }
 
+   .our-projects__row {
+      gap: 10px;
+   }
+
+   .blog-item__wrapper {
+      grid-template-rows: 170px 1fr;
+   }
+
+   .our-projects__row {
+      grid-auto-rows: 145px;
+   }
+
 }
 
 /* sm <= Medium (md) */
@@ -123,6 +150,14 @@
    }
    .best-works__top-item {
       flex: 0 0 100%;
+   }
+
+   .best-item {
+      display: flex;
+   }
+   .best-works__img-wrapper {
+      max-width: 200px;
+      width: 100%;
    }
 
    .our-patners__list {
@@ -160,15 +195,15 @@
    }
 
    .blog-company__container {
-      max-width: 100%;
+      max-width: 730px;
    }
 
    .our-projects__list {
       row-gap: 10px;
    }
    .our-projects__row {
-      gap: 10px;
-      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-auto-rows: 160px;
+      grid-template-columns: repeat(2, 1fr);
    }
 
 }
@@ -191,8 +226,17 @@
       padding-inline: 10px;
    }
 
+}
+@media (max-width : 575px) {
    .blog-company__container {
       max-width: 390px;
+   }
+   .blog-item-noslide .blog-item__wrapper {
+      grid-template-rows: 185px 1fr;
+   }
+
+   .our-projects__container {
+      max-width: 550px;
    }
 }
 
@@ -202,7 +246,18 @@
    }
    .our-projects__row {
       gap: 15px;
-      grid-template: 1fr / 1fr;
+      grid-auto-rows: calc(100vw / 1.7);
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width : 460px) {
+   .best-item {
+      display: block;
+   }
+   .best-works__img-wrapper {
+      max-width: 100%;
+      height: 58vw;
    }
 }
 
@@ -215,6 +270,13 @@
    }
    .home-slider__prev {
       padding-right: 15px;
+   }
+}
+
+@media (max-width : 330px) {
+   .blog-item__wrapper,
+   .blog-item-noslide .blog-item__wrapper {
+      grid-template-rows: 150px 1fr;
    }
 }
 
