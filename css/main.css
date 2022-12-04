@@ -113,7 +113,7 @@ a:focus {
 }
 .breadcrumbs {
    font-weight: 600;
-   font-size: .875;
+   font-size: .875rem;
    padding-left: 0;
 }
 .breadcrumbs a,
