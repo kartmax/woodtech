@@ -302,6 +302,10 @@ document.addEventListener('DOMContentLoaded', function() {
             enabled : true,
             onlyInViewport : false,
          },
+         navigation : {
+            prevEl : '.project-slider-big__prev',
+            nextEl : '.project-slider-big__next'
+         },
          thumbs: {
             swiper: projectSliderSmall,
          },
