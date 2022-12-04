@@ -351,6 +351,11 @@ input, textarea {
 }
 .swiper-lazy-preloader {
    --swiper-theme-color: var(--accent);
+   animation: swiperLazyPreloader 1s linear infinite;
+}
+@keyframes swiperLazyPreloader {
+   0% { transform: rotate(0)deg; }
+   100% { transform: rotate(360deg); }
 }
 
 /* ------------------------ */
