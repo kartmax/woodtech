@@ -770,8 +770,12 @@ span.js-animate__letter {
    background-color: #343A44;
    margin: 0 8px;
 }
-.home-slider__scrollbar {
+.home-slider__scrollbar.swiper-scrollbar {
    cursor: pointer;
+   position: relative;
+   bottom: 0;
+   left: 0;
+   width: 100%;
 }
 .home-slider__bottom .swiper-scrollbar-drag {
    height: 5px;
