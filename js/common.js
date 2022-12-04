@@ -297,14 +297,14 @@ document.addEventListener('DOMContentLoaded', function() {
       // big slider
       const projectSliderBig = new Swiper('.project-slider-big', {
          speed: 1000,
-         effect : 'fade',
+         effect: 'fade',
          keyboard : {
             enabled : true,
             onlyInViewport : false,
          },
          thumbs: {
             swiper: projectSliderSmall,
-          },
+         },
       })
    }
 
