@@ -1820,13 +1820,10 @@ span.pagination__numbers {
    margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1320 - 320)));;
 }
 
-.info__name, 
-.info__value {
-   flex-grow: 0;
-}
 .info__item {
    display: flex;
    justify-content: space-between;
+   align-items: flex-end;
    padding-block: calc(10px + (12 - 10) * ((100vw - 320px) / (1320 - 320)));
    color: #666;
 }
@@ -1834,13 +1831,18 @@ span.pagination__numbers {
    margin-bottom: 0;
    line-height: 1;
 }
+.info__name, 
+.info__value {
+   flex-grow: 0;
+}
 .info__dot {
    display: block;
+   height: 3px;
    flex-grow: 1;
    background-image: url(../images/project/author/dot.jpg);
-   background-size: 5px 2.5px;
-   background-repeat-y: no-repeat;
-   background-position: center 80%;
+   background-size: 5px 100%;
+   margin-bottom: .15em;
+   margin-inline: 2px;
 }
 
 .info__value {
