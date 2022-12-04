@@ -274,6 +274,40 @@ document.addEventListener('DOMContentLoaded', function() {
       wrapSlides.style.cssText += `--height: ${hWrapSlides}px`;
    }
 
+   // project__slider-big and project__slider-small
+   if(document.querySelector('.project-slider-big')) {
+      // small slider
+      const projectSliderSmall = new Swiper('.project-slider-small', {
+         speed: 1000,
+         freeMode: true,
+         spaceBetween: 5,
+         slidesPerView: 4.5,
+         breakpoints: {
+            576: {
+               slidesPerView: 5.5,
+            },
+            768: {
+               slidesPerView: 6.5,
+            },
+            992: {
+               slidesPerView: 8.5,
+            }
+         },
+      })
+      // big slider
+      const projectSliderBig = new Swiper('.project-slider-big', {
+         speed: 1000,
+         effect : 'fade',
+         keyboard : {
+            enabled : true,
+            onlyInViewport : false,
+         },
+         thumbs: {
+            swiper: projectSliderSmall,
+          },
+      })
+   }
+
 
 
    //==================================================================================
