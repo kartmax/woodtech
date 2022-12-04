@@ -132,6 +132,12 @@
       grid-auto-rows: 145px;
    }
 
+   /* page-navigation */
+   .page-navigation {
+      flex-direction: column;
+      row-gap: 5px;
+   }
+
 }
 
 /* sm <= Medium (md) */
