@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Блог компании</title>
+	<title>Наши услуги</title>
 	<meta name="description" content="Компания Woodhouse - Создаём теплую атмосферу Вашего отдыха">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -18,6 +18,11 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
    <!-- / BOOTSTRAP -->
+
+   <!-- MICROMODAL -->
+   <link rel="stylesheet" href="libs/micromodal/micromodal.css">
+   <script src="libs/micromodal/micromodal.min.js" defer></script>
+   <!-- / MICROMODAL -->
 
    <!-- LOZY LOADING IMG -->
    <link rel="stylesheet" href="libs/progressive-image/dist/progressive-image.css">
@@ -72,8 +77,8 @@
                <ul class="top-menu">
                   <li class="top-menu__item"><a href="index.html" class="top-menu__link">Главная</a></li>
                   <li class="top-menu__item"><a href="projects.html" class="top-menu__link">Проекты</a></li>
-                  <li class="top-menu__item"><a href="services.html" class="top-menu__link">Услуги</a></li>
-                  <li class="top-menu__item"><span class="top-menu__link">Блог</span></li>
+                  <li class="top-menu__item"><span class="top-menu__link">Услуги</span></li>
+                  <li class="top-menu__item"><a href="blog.html" class="top-menu__link">Блог</a></li>
                   <li class="top-menu__item"><a href="#" class="top-menu__link">Компания</a></li>
                </ul>
             </nav>
@@ -98,103 +103,102 @@
    </div>
    <!-- \ NAVBAR -->
 
-   <!-- BLOG COMPANY -->
-   <section class="blog-company">
-      <div class="container blog-company__container">
+   <!-- OUR SERVICES -->
+   <section class="our-services">
+      <div class="container our-services__container">
          <div class="inner-heading">
-            <h2 class="section-inner-title">блог компании</h2>
-            <p>Список новостей компании Woodtech и статей на тему архитектурного дизайна, проектирования и дизайна интерьеров.</p>
+            <h2 class="section-inner-title">наши услуги</h2>
+            <p>Здесь мы собрали все ключевые услуги нашей компании, разбитые по категориям. Если необходимой вам услуги нет в списке, напишите нам.</p>
          </div>
 
-         <div class="blog-company__body row">
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>12</span> июля</span>
-                     <a href="./images/blog/1.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/1-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
+         <div class="our-services__body row services">
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">Дизайн интерьера</a>
+                     <p>Мы проектируем потрясающие дизайны интерьеров вот уже более 30 лет и радуем наших клиентов неповторимыми работами, выполненными в различных стилях и со вкусом.</p>
                   </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Построили потрясающую деревянную лестницу</h4>
-                        <p>Один из самых необыкновенных проектов нашей компании - винтовая деревянная лестница в старинном стиле.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/1.jpg" class="progressive replace service__bg_progressive" tabindex="-1">
+                        <img src="./images/services/1-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                </div>
             </div>
-
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>02</span> июля</span>
-                     <a href="./images/blog/2.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/2-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">проектирование</a>
+                     <p>Производим высокоточные архитектурные инженерные расчеты любого плана. С нами вы можете не беспокоиться долговечности и качестве любых конструкций.</p>
                   </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/2.jpg" class="progressive replace service__bg_progressive">
+                        <img src="./images/services/2-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                </div>
             </div>
-
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>15</span> сентября</span>
-                     <a href="./images/blog/3.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/3-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">поставка дерева</a>
+                     <p>Мы поставляем исключительно качественные породы древесины от надежных итальянских и французких поставщиков. Вся древесина соответствует евростандарту.</p>
                   </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/3.jpg" class="progressive replace service__bg_progressive" tabindex="-1">
+                        <img src="./images/services/3-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                </div>
             </div>
-
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>10</span> ноября</span>
-                     <a href="./images/blog/4.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/4-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">ремонт</a>
+                     <p>Выполняем ремонт мебели и изделий из древесины. В нашей современной технологичной мастерской найдутся инструменты и материалы для любых задач.</p>
+                  </div>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/4.jpg" class="progressive replace service__bg_progressive" tabindex="-1">
+                        <img src="./images/services/4-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
                      </a>
                   </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
+               </div>
+            </div>
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">концепт</a>
+                     <p>Одно из наших направлений - создание концептуальных инталяций из дерева для тех, кто ценит современное исскуство и желает разнообразить свой интерьер.</p>
+                  </div>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/5.jpg" class="progressive replace service__bg_progressive" tabindex="-1">
+                        <img src="./images/services/5-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="services__item service col-sm-6">
+               <div class="service__wrap">
+                  <div class="serivce__text">
+                     <a href="#" class="service__title">выезд мастера</a>
+                     <p>Вы обладатель старинной,  тяжелой или необычной мебели или изделий из древесины? Мы приедем к вам со всем необходимым инструментом сами!</p>
+                  </div>
+                  <div class="service__bg">
+                     <a href="#" data-href="./images/services/6.jpg" class="progressive replace service__bg_progressive" tabindex="-1">
+                        <img src="./images/services/6-tiny.jpg" class="preview service__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
+                     </a>
                   </div>
                </div>
             </div>
          </div>
-
-         <nav class="pagination" role="navigation">
-            <div class="screen-reader-text">Навигация по записям блога</div>
-            <div class="pagination__links">
-                <span class="pagination__arrow pagination__prev" href="#">&#8592 Назад</span>
-                <span class="pagination__numbers pagination__current">1</span>
-                <a class="pagination__numbers" href="#">2</a>
-                <a class="pagination__numbers" href="#">3</a>
-                <a class="pagination__arrow pagination__next" href="#">Вперед &#8594</a>
-            </div>
-        </nav>
-
-
+      </div>
+      <div class="our-services__footer">
+         <div class="container">
+            <button href="#" class="button" data-modal-open="modal" data-form="Форма на странице Наши услуги">оформить заявку</button>
+         </div>
       </div>
    </section>
-   <!--  \ OUR BLOG -->
+   <!--  \ OUR SERVICES -->
 
    <!-- FOOTER -->
    <footer class="footer">
@@ -268,6 +272,30 @@
    </footer>
    <!-- / FOOTER -->
 
+   <!-- MODAL WINDOWS -->
+   <div class="modal micromodal-slide" id="modal">
+      <div class="modal__overlay" data-modal-close>
+         <div class="modal__container">
+
+            <header class="modal__header">
+               <h2 class="modal__title">Оформить заявку</h2>
+               <button class="modal__close" title="Закрыть окно" aria-label="Закрыть окно" data-modal-close=""></button>
+               
+               <form>
+                  <input type="text" name="Имя" placeholder="Ваше имя...">
+                  <input type="tel" name="Телефон" placeholder="Ваш телефон...">
+                  <textarea name="Комментарий" rows="4" placeholder="Комментарий..."></textarea>
+                  <input type="hidden" name="form">
+                  <div class="modal__footer">
+                     <button class="button">Отправить</button>
+                  </div>
+               </form>
+            </header>
+
+         </div>
+      </div>
+   </div>
+   <!-- \ MODAL WINDOWS -->
 
    <!-- SCROLL UP --> 
    <button class="scrollup" id="scroll-up" aria-roledescription="button" aria-label="scroll to top">

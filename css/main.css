@@ -1868,3 +1868,115 @@ span.pagination__numbers {
    font-weight: 700;
    color: #444;
 }
+
+
+/* ------------------------------------- OUR SERVICES PAGE ------------------------------------- */
+.our-services {
+   padding-top: var(--padding-block-main);
+}
+
+.our-services__body {
+   row-gap: 20px;
+   padding-top: calc(15px + (34 - 15) * ((100vw - 320px) / (1320 - 320)));
+}
+
+.service {
+}
+
+.services__item {
+}
+
+.service__wrap {
+   border: 1px solid var(--light-disabled);
+   border-radius: var(--radius-style);
+   overflow: hidden;
+   -webkit-mask-image: -webkit-radial-gradient(white, black);
+   display: flex;
+   height: 100%;
+   position: relative;
+}
+.service__wrap::before {
+   content: '';
+   display: block;
+   width: 3px;
+   height: 30px;
+   background-color: var(--light-disabled);
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: background-color var(--transition);
+}
+.service__wrap:hover::before {
+   background-color: var(--accent);
+}
+
+.serivce__text {
+   width: 100%;
+   color: var(--text-light);
+   font-size: var(--small-text);
+   line-height: 1.7;
+   padding-inline: 35px;
+   padding-block: 35px 14px;
+}
+
+.service__title {
+   line-height: 1.2;
+   font-weight: 800;
+   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1320 - 320)));
+   text-transform: uppercase;
+   color: var(--text-color);
+   text-decoration: none;
+   transition: color var(--transition);
+   margin-bottom: 14px;
+   display: inline-block;
+   position: relative;
+}
+.service__title::before {
+   content: '';
+   display: block;
+   height: 1px;
+   width: 100%;
+   background-color: var(--text-color);
+   position: absolute;
+   bottom: -1px;
+   opacity: .2;
+   transition: opacity var(--transition), background-color var(--transition);
+}
+.service__title:hover,
+.service__title:focus {
+   color: var(--accent);
+}
+.service__title:hover::before,
+.service__title:focus::before {
+   opacity: 1;
+   background-color: var(--accent);
+}
+
+.service__bg {
+   max-width: 259px;
+   width: 100%;
+}
+
+.service__bg_progressive {
+   height: 100%;
+}
+.progressive .service__bg_img {
+   height: calc(100% + 1px);
+   width: calc(100% + 1px);
+}
+.service__bg_img {
+   aspect-ratio: 1 / .9498;
+   object-fit: cover;
+   will-change: transform;
+   transition: transform 1s ease;
+}
+.service__bg_img:hover {
+   transform: scale(1.05);
+}
+
+.our-services__footer {
+   padding-block: calc(30px + (54 - 30) * ((100vw - 320px) / (1320 - 320)));;
+   background-color: #FAFAFA;
+   text-align: center;
+}
