@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>О компании</title>
+	<meta name="description" content="Компания Woodhouse - Создаём теплую атмосферу Вашего отдыха">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="icon" href="images/favicon.png">
+	<!-- <meta property="og:image" content="images/image.jpg"> -->
+
+   <!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+   <!-- / BOOTSTRAP -->
+
+   <!-- LOZY LOADING IMG -->
+   <link rel="stylesheet" href="libs/progressive-image/dist/progressive-image.css">
+   <script src="libs/progressive-image/dist/progressive-image.js" defer></script>
+   <!-- / LOZY LOADING IMG -->
+
+   <!-- GSAP -->
+   <script src="libs/gsap/dist/gsap.min.js" defer></script>
+   <!-- / GSAP -->
+
+   <!-- INERT JS -->
+   <script src="libs/inert_js/inert.js" defer></script>
+   <!-- / INERT JS -->
+
+   <!-- TABS -->
+   <link rel="stylesheet" href="libs/tabs/style.css">
+   <script src="libs/tabs/script.js" defer></script>
+   <!-- / TABS -->
+
+   <!-- CUSTOM STYLES -->
+	<link rel="stylesheet" href="css/main.css?v=4">
+	<link rel="stylesheet" href="css/media.css">
+   <!-- / CUSTOM STYLES -->
+
+   <!-- CUSTOM JS -->
+	<script src="js/common.js?v=4" defer></script>
+   <!-- / CUSTOM JS -->
+</head>
+
+<body>
+
+   <!-- NAVBAR -->
+   <div class="navbar navbar-deep" id="navbar">
+      <div class="container">
+         <div class="row">
+            <div class="col-6 col-md-3">
+               <div class="logo">
+                  <a href="index.html" class="logo__link">
+                     <i class="js-animate-logo-icon"></i>
+                     <span class="js-animate logo__title">woodtech</span>
+                     <span class="js-animate logo__subtitle">Architecture</span>
+                  </a>
+               </div>
+            </div>
+            <nav class="col-6 col-md-9 col-lg-6 menu-container">
+               <button class="menu-toggle" aria-label="Открыть меню">
+                  <span id="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                   </span>
+                   <span id="cross">
+                     <span></span>
+                     <span></span>
+                   </span>
+               </button>
+               <ul class="top-menu">
+                  <li class="top-menu__item"><a href="index.html" class="top-menu__link">Главная</a></li>
+                  <li class="top-menu__item"><a href="projects.html" class="top-menu__link">Проекты</a></li>
+                  <li class="top-menu__item"><a href="services.html" class="top-menu__link">Услуги</a></li>
+                  <li class="top-menu__item"><a href="blog.html" class="top-menu__link">Блог</a></li>
+                  <li class="top-menu__item"><span class="top-menu__link">Компания</span></li>
+               </ul>
+            </nav>
+            <div class="col-lg-3 d-none d-lg-block nav-soc-wrap">
+               <ul class="nav-soc" aria-label="Социальные сети">
+                  <li class="nav-soc__item"><a href="#" class="nav-soc__link" target="_blank" aria-label="Инстраграмм">
+                     <img loading="lazy" src="images/icon-soc/deep/instagram-brands.svg" alt="Иконка Инстраграмм">
+                  </a></li>
+                  <li class="nav-soc__item"><a href="#" class="nav-soc__link" target="_blank" aria-label="Вконтакте">
+                     <img loading="lazy" src="images/icon-soc/deep/vk.svg" alt="Иконка Вконтакте">
+                  </a></li>
+                  <li class="nav-soc__item"><a href="#" class="nav-soc__link" target="_blank" aria-label="Фейсбук">
+                     <img loading="lazy" src="images/icon-soc/deep/facebook-brands.svg" alt="Иконка Фейсбук">
+                  </a></li>
+                  <li class="nav-soc__item"><a href="#" class="nav-soc__link" target="_blank" aria-label="Твитер">
+                     <img loading="lazy" src="images/icon-soc/deep/twitter-brands.svg" alt="Иконка Твитер">
+                  </a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- \ NAVBAR -->
+
+   <!-- ABOUT COMPANY -->
+   <section class="about-company">
+      <div class="container about-company__container">
+         <div class="row tabs about-company__tabs">
+            <div class="col-md-3">
+               <div class="tabs__nav about-company__tab-nav">
+                  <h3 class="about-company__tab-nav_title">информация о нас</h3>
+                  <div class="about-company__tabs-wrap">
+                     <button class="tabs__btn about-company__tabs-btn tabs__btn_active">О компании</button>
+                     <button class="tabs__btn about-company__tabs-btn">Преимущества</button>
+                     <button class="tabs__btn about-company__tabs-btn">Наши партнеры</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-9">
+               <div class="tabs__content about-company__tabs-content">
+                  <div class="tabs__pane tabs__pane_show">
+                     <h2 class="about-company__title">О компании ”Woodtech”</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <a href="./images/company/about/1.jpg" class="progressive replace about-company_progressive" tabindex="-1">
+                        <img src="./images/company/about/1-tiny.jpg" class="preview" alt="project image" width="20px" height="100%" />
+                     </a>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <a href="./images/company/about/2.jpg" class="progressive replace about-company_progressive" tabindex="-1">
+                        <img src="./images/company/about/2-tiny.jpg" class="preview" alt="project image" width="20px" height="100%" />
+                     </a>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                  <div class="tabs__pane">
+                     <h2 class="about-company__title about-company__benefits_main-title">Наши преимущества</h2>
+                     <div class="about-company__benefits row">
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg style="width: 50px" class="icon eco-icon"><use xlink:href="#eco-icon"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Безопасные материалы</a>
+                              <p>Безопасность каждого из используемых материалов подтверждается соответствующим сертификатом европейского стандарта. Мы используем продукцию только проверенных годами брендов.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg class="icon wood-cut-icon"><use xlink:href="#wood-cut-icon"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Качественная древесина</a>
+                              <p>В создании неповторимых интерьеров мы используем только качественную, проверенную древесину, которая будет служить вам долгие годы, сохраняя свой безупречный, первозданный внешний вид.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg class="icon people"><use xlink:href="#people"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Профессиональная команда</a>
+                              <p>Мы работаем только с профессионалами высочайшего уровня, обладающими глубоким опытом. Все наши дизайнеры, проектировщики, инженеры и архитекторы являются сертифицированными специалистами.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg class="icon tools"><use xlink:href="#tools"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Лучшие креативные решения</a>
+                              <p>Безопасность каждого из используемых материалов подтверждается соответствующим сертификатом европейского стандарта. Мы используем продукцию только проверенных годами брендов.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg class="icon material"><use xlink:href="#material"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Качественные материалы</a>
+                              <p>В создании неповторимых интерьеров мы используем только качественную, проверенную древесину, которая будет служить вам долгие годы, сохраняя свой безупречный, первозданный внешний вид.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 about-company__benefits_item">
+                           <div>
+                              <div class="about-company__benefits_icon">
+                                 <svg style="width: 60px" class="icon delivery"><use xlink:href="#delivery"></use></svg>
+                              </div>
+                              <a href="#" class="about-company__benefits_title">Проверенные проставщики</a>
+                              <p>Мы работаем только с профессионалами высочайшего уровня, обладающими глубоким опытом. Все наши дизайнеры, проектировщики, инженеры и архитекторы являются сертифицированными специалистами.</p>
+                           </div>
+                           <a href="#" class="about-company__benefits_more">Подробнее</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tabs__pane">
+                     <h2 class="about-company__title">Наши партнеры</h2>
+                     <div class="about-company__partners">
+                        <div class="row about-company__partners_item">
+                           <div class="col-4 col-sm-3">
+                              <a href="#" class="about-company__partners_bg">
+                                 <img src="images/our-partners/partner_1.png" alt="logo partner">
+                              </a>
+                           </div>
+                           <div class="col-sm-9">
+                              <a href="#" class="about-company__partners_title">Milano Parquet S.R.L</a>
+                              <p>Компания родилась из города, в котором она получила свое название: Милан. Современный и динамичный город, всегда идущий в ногу с тенденциями и постоянно развивающийся. Прогресс, инновации и возможности тесно связаны с образом жизни этого мегаполиса, где, пользуясь этим влиянием, наша компания более двадцати лет развивалась вместе с ним. Мы страстно и целеустремленно заботимся о древесине и с особой тщательностью следим за всем производственным процессом; от тщательного отбора сырья до различных процессов трансформации и отделки поверхностей, чтобы превратить драгоценные столы в изысканные и качественные полы.</p>
+                           </div>
+                        </div>
+                        <div class="row about-company__partners_item">
+                           <div class="col-4 col-sm-3">
+                              <a href="#" class="about-company__partners_bg">
+                                 <img src="images/our-partners/partner_2.png" alt="logo partner">
+                              </a>
+                           </div>
+                           <div class="col-sm-9">
+                              <a href="#" class="about-company__partners_title">Mazzucato Legnami</a>
+                              <p>Mazzucato Legnami - историческая компания в районе Падуи, специализирующаяся на дереве. В центре производственной деятельности находятся лес, пиломатериалы, вагонка, садовые товары, столбы. Mazzucato Legnami предлагает широкий спектр услуг и продуктов в лесном секторе - оптом и в розницу - для частных лиц, ремесленников, промышленности и государственных организаций (через MEPA).</p>
+                           </div>
+                        </div>
+                        <div class="row about-company__partners_item">
+                           <div class="col-4 col-sm-3">
+                              <a href="#" class="about-company__partners_bg">
+                                 <img src="images/our-partners/partner_3.png" alt="logo partner">
+                              </a>
+                           </div>
+                           <div class="col-sm-9">
+                              <a href="#" class="about-company__partners_title">Andrea Fanfani</a>
+                              <p>Mazzucato Legnami - историческая компания в районе Падуи, специализирующаяся на дереве. В центре производственной деятельности находятся лес, пиломатериалы, вагонка, садовые товары, столбы. Mazzucato Legnami предлагает широкий спектр услуг и продуктов в лесном секторе - оптом и в розницу - для частных лиц, ремесленников, промышленности и государственных организаций (через MEPA).</p>
+                           </div>
+                        </div>
+                        <div class="row about-company__partners_item">
+                           <div class="col-4 col-sm-3">
+                              <a href="#" class="about-company__partners_bg">
+                                 <img src="images/our-partners/partner_4.png" alt="logo partner">
+                              </a>
+                           </div>
+                           <div class="col-sm-9">
+                              <a href="#" class="about-company__partners_title">Angelo Cappellini</a>
+                              <p>Более, чем вековой опыт в обработке дерева Angelo Cappellini уходит своими корнями в Брианцу, территорию, знаменитую своими традициями краснодеревщиков. Из ремесленной мастерской, основанной в 1886 году, до первой коллекции, представленной в шестидесятых годах, эволюция марки была постоянной. Более десяти этапов составляют производственный процесс Angelo Cappellini, где гармонично чередуются фазы ручной обработки и промышленные фазы. В данном контексте фазы реализации с участием станков последнего поколения сочетаются с опытом и техническими знаниями мастеров, делая процессы более эффективными, но в то же время следуя традициям и качеству ручной работы. Именно эта синергическая смесь, наряду с пристальным вниманием к деталям, отличают фирменные коллекции этой марки, известной во всём мире своим уникальным эксклюзивным стилем и высоким качеством исполнения.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--  \ ABOUT BLOG -->
+
+   <!-- FOOTER -->
+   <footer class="footer">
+      <div class="container">
+         <div class="row footer__wrap">
+
+            <div class="col-lg-4">
+               <div class="logo footer__logo">
+                  <a href="index.html" class="logo__link">
+                     <i></i>
+                     <span class="logo__title">woodtech</span>
+                     <span class="logo__subtitle">Architecture</span>
+                  </a>
+               </div>
+               <h4 class="footer__title">Коротко о нас</h4>
+               <p class="footer__description">Мы досконально прорабатываем, а затем обсуждаем с нашими клиентами внешний вид каждого изделия. Мы крайне редко повторяемся, ведь мы знаем что вы цените индивидуальность и не готовы довольствоваться готовыми решениями.</p>
+            </div>
+
+            <div class="col-3 col-sm-2">
+               <h4 class="footer__title footer__title-decor">меню</h4>
+               <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a href="index.html" class="footer__menu-link">Главная</a></li>
+                  <li class="footer__menu-item"><a href="projects.html" class="footer__menu-link">Проекты</a></li>
+                  <li class="footer__menu-item"><a href="services.html" class="footer__menu-link">Услуги</a></li>
+                  <li class="footer__menu-item"><a href="blog.html" class="footer__menu-link">Блог</a></li>
+                  <li class="footer__menu-item"><a href="company.html" class="footer__menu-link">Контакты</a></li>
+               </ul>
+            </div>
+
+            <div class="col-9 col-sm-4 col-md-3">
+               <h4 class="footer__title footer__title-decor">услуги</h4>
+               <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Дизайн интерьера</a></li>
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Проектирование</a></li>
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Поставки дерева</a></li>
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Ремонт</a></li>
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Концепт</a></li>
+                  <li class="footer__menu-item"><a href="#" class="footer__menu-link">Выезд мастера</a></li>
+               </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-7 col-lg-3">
+               <h4 class="footer__title footer__title-decor">мы в соц. сетях</h4>
+               <p class="footer__description">Подпишитесь на нас в социальных сетях чтобы не пропустить выход новых невероятных проектов разработанных для наших клиентов по всему миру</p>
+               
+               <ul class="footer__social-list">
+                  <li>
+                     <a href="#" class="footer__social-link">
+                        <img loading="lazy" src="./images/icon-soc/white/instagram-brands.svg" alt="icon instagram">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer__social-link">
+                        <img loading="lazy" src="./images/icon-soc/white/vk.svg" alt="icon vk">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer__social-link">
+                        <img loading="lazy" src="./images/icon-soc/white/facebook-brands.svg" alt="icon facebook">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer__social-link">
+                        <img loading="lazy" src="./images/icon-soc/white/twitter-brands.svg" alt="icon twiter">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- / FOOTER -->
+
+   <!-- SVG SPRITE -->
+   <div style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+         <symbol id="delivery" viewBox="0 0 76 34">
+            <g clip-path="url(#a)"><path d="M29.731 33.914a4.656 4.656 0 0 1-3.51-4.456c-.013-1.095.191-1.817.751-2.652 1.626-2.425 5.082-2.765 7.138-.703.973.976 1.248 1.7 1.25 3.288 0 1.218-.036 1.421-.374 2.065-.783 1.488-2.22 2.435-3.847 2.532-.495.03-1.128-.004-1.408-.074zm1.907-3.325c.707-.496.823-1.642.225-2.205-1.042-.982-2.618-.247-2.448 1.142.129 1.054 1.382 1.654 2.224 1.063zm29.788 3.285c-1.395-.396-2.62-1.545-3.146-2.953-.333-.89-.25-2.651.166-3.5.49-1.002 1.176-1.695 2.157-2.18.805-.397 1.023-.444 2.052-.444 1.028 0 1.246.047 2.051.444 1.656.816 2.56 2.285 2.556 4.15-.004 1.944-1.01 3.482-2.793 4.273-.772.342-2.225.442-3.042.21zm2.205-3.459c.378-.338.44-.483.44-1.024s-.062-.686-.44-1.025c-.33-.295-.575-.394-.975-.394s-.646.099-.975.394c-.378.339-.44.484-.44 1.025 0 .54.062.686.44 1.024.33.295.574.394.975.394.4 0 .645-.099.975-.394zM16.962 25.88v-2.367h-.478c-1.076 0-1.546-1.37-.745-2.172l.394-.395h4.263c4.682 0 4.87-.029 5.186-.795.206-.497.083-1.12-.285-1.454-.258-.235-.686-.255-6.661-.318l-6.386-.068-.37-.371a1.266 1.266 0 0 1 0-1.824l.37-.372 10.86-.068 10.86-.067.324-.38c.43-.5.43-1.172 0-1.673l-.325-.38-16.654-.067L.66 13.042l-.283-.284C.22 12.6.06 12.232.022 11.94c-.06-.442-.01-.607.29-.964l.362-.431 19.868-.035 19.867-.035.371-.372a1.266 1.266 0 0 0 0-1.824l-.37-.372-15.802-.067c-8.69-.037-15.883-.12-15.983-.186-.357-.23-.584-1.017-.43-1.486.31-.939-.234-.896 11.309-.896 7.18 0 10.484-.045 10.706-.146.817-.373.974-1.594.275-2.145-.341-.27-.507-.276-6.94-.276-7.02 0-7.314-.025-7.65-.655-.253-.474-.173-1.19.18-1.6L16.4.07 34 .036 51.603 0v24.054h1.618V5.948h11.707l.273.348c.24.307 2.461 2.645 7.5 7.894.82.855 1.897 1.98 2.393 2.5l.903.946.001 5.303.002 5.303h-7.211l-.231-.788c-.324-1.104-1.182-2.328-2.136-3.047-2.523-1.9-5.911-1.663-8.14.57-.777.78-1.483 1.991-1.636 2.807l-.086.458H36.941l-.086-.458c-.268-1.436-1.84-3.331-3.358-4.051-3.44-1.631-7.555.224-8.653 3.901l-.161.54-3.86.037-3.86.035V25.88zm51.603-12.872c-2.468-2.582-4.55-4.74-4.625-4.795-.076-.054-1.913-.1-4.081-.101l-3.943-.002v9.593h17.136l-4.487-4.695z" fill="#F88500"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h76v34H0z"></path></clipPath></defs>
+         </symbol>
+      
+         <symbol id="eco-icon" viewBox="0 0 50 50">
+            <path d="M1.539 22.877c.778-.645 1.533-1.353 2.34-1.924 3.796-2.683 7.758-3.921 11.78-4.5 3.156-.452 6.21-.382 9.119.38 1.728.453 3.333 1.164 4.73 2.298.073.06.143.125.2.173-.323.792-.671 1.558-.948 2.341-.703 1.99-.591 3.798-.018 5.487.347 1.023.844 1.917 1.422 2.743a.271.271 0 0 1 .042.157c-3.988-3.744-8.63-6.077-14.229-6.38.065.034.127.07.194.094 3.087 1.105 5.993 2.557 8.587 4.609 1.836 1.45 3.481 3.136 4.689 5.343.21.386.379.802.57 1.201.084.18.047.323-.12.492a23.084 23.084 0 0 1-3.624 3.012c-1.58 1.051-3.205 1.806-4.888 2.152-2.859.587-5.257-.166-7.32-1.88-1.661-1.38-2.92-3.174-3.722-5.421-.435-1.215-.82-2.464-1.207-3.71-.456-1.466-.964-2.886-1.854-4.005-1.086-1.364-2.547-2.021-4.19-2.325-.497-.093-1.008-.145-1.512-.215l-.041-.122z" fill="#F88500"></path><path d="M32.99 33.459c3.794-6.401 6.672-13.047 7.928-20.221-2.016 7.072-4.879 13.741-9.434 19.707-.241-.33-.464-.614-.67-.916a12.47 12.47 0 0 1-1.68-3.548c-.773-2.637-.338-5.287 1.32-7.977 1.034-1.68 2.266-3.136 3.59-4.504 1.293-1.334 2.61-2.637 3.864-4.023 1.802-1.993 3.1-4.298 3.67-6.985a.651.651 0 0 1 .031-.106.959.959 0 0 1 .08-.114c.253.512.532.989.739 1.515 1.82 4.628 2.485 9.733 1.995 15.316-.187 2.061-.627 4.112-1.51 6.11-1.321 2.985-3.328 4.807-5.983 5.517-1.33.352-2.613.365-3.94.229z" fill="#F88500"></path>
+         </symbol>
+      
+         <symbol id="material" viewBox="0 0 45 45">
+            <g clip-path="url(#a)"><path d="M21.434 44.497C19.676 43.42.664 30.877.344 30.581c-.404-.372-.458-1.233-.108-1.733.276-.397 1.124-.588 1.562-.353.173.093 4.87 3.164 10.438 6.824 5.568 3.66 10.187 6.654 10.264 6.654.077 0 4.696-2.994 10.264-6.654 5.568-3.66 10.265-6.731 10.438-6.824.438-.235 1.286-.044 1.563.352.349.5.295 1.362-.11 1.735-.32.295-19.325 12.835-21.09 13.915-.451.277-.93.503-1.065.503-.134 0-.614-.226-1.066-.503zm.277-7.148c-.821-.447-.974-1.436-.323-2.09.866-.867 2.622-.303 2.622.843 0 .603-.227.982-.752 1.254-.549.285-1.015.282-1.547-.007zm-3.833-2.55c-1.07-.475-1.43-1.463-.817-2.245.394-.501.917-.584 1.64-.26 1.069.48 1.396 1.44.742 2.175-.43.483-.966.596-1.565.33zm8.148.063c-.744-.301-1.028-1.284-.562-1.951.317-.453 1.316-.902 1.8-.81.507.098.973.727.973 1.314 0 .565-.432 1.087-1.149 1.387-.569.238-.615.24-1.062.06zM13.517 31.96c-.685-.38-.981-.78-.981-1.329 0-1.494 1.685-1.818 2.704-.52.42.535.397.997-.076 1.56-.42.5-1.063.613-1.647.29zm16.319-.289c-.473-.563-.496-1.024-.076-1.56.704-.896 1.969-1.078 2.473-.355.35.5.296 1.361-.108 1.73-.883.806-1.712.873-2.29.185zm-7.997-1.373C20.643 29.602.34 16.174.193 15.982c-.314-.41-.232-1.305.151-1.661.187-.174 5.13-3.467 10.984-7.318C20.248 1.133 22.058 0 22.5 0c.443 0 2.249 1.132 11.172 7.002 5.854 3.852 10.797 7.145 10.984 7.318.383.357.465 1.252.15 1.662-.16.21-20.851 13.883-21.687 14.33-.379.204-.916.198-1.28-.014zm-12.55-1.111c-.675-.353-.98-.799-.98-1.429 0-1.1 1.13-1.573 2.19-.916 1.58.978.432 3.203-1.21 2.345zm25.176.07c-.187-.075-.452-.373-.59-.66-.21-.444-.219-.596-.057-.988.41-.994 1.901-1.409 2.555-.71.664.708.36 1.79-.636 2.264-.586.279-.778.293-1.272.094zM4.73 26.223c-.28-.18-.554-.529-.654-.832-.145-.442-.128-.597.111-1.008.385-.66 1.033-.839 1.772-.487 1.04.494 1.359 1.548.686 2.265-.443.473-1.235.498-1.915.062zm33.622-.062c-.672-.717-.352-1.77.687-2.265.74-.352 1.387-.174 1.772.487.24.412.257.565.11 1.011-.348 1.058-1.87 1.512-2.569.767zM.726 23.585c-.516-.29-.721-.667-.721-1.324 0-1.108 1.321-1.565 2.253-.78.873.737.513 2.112-.593 2.263-.319.044-.69-.019-.94-.159zm42.203.076c-.428-.172-.651-.605-.651-1.261 0-.402.11-.62.464-.918.942-.795 2.253-.329 2.253.8 0 .651-.216 1.026-.752 1.303-.49.255-.824.274-1.314.076z" fill="#F88500"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h45v45H0z"></path></clipPath></defs>
+         </symbol>
+      
+         <symbol id="people" viewBox="0 0 62 40">
+            <path d="M13.067 39.414c.294-1.444.568-2.798.841-4.161.223-1.101.416-2.202.639-3.303.273-1.303.526-2.606.87-3.89.274-1.03 1.044-1.737 1.865-2.373 1.5-1.172 3.221-1.92 4.923-2.717.953-.444 1.844-1 2.796-1.434.507-.233.68-.556.639-1.05-.03-.365.08-.536.476-.526.273 0 .557-.081.922-.132-.061-.484-.112-.96-.193-1.444-.01-.07-.131-.141-.203-.182-.648-.394-.931-1.02-1.114-1.707-.101-.374-.131-.768-.182-1.151-.03-.212-.081-.334-.345-.374-.537-.08-.78-.495-.87-1.202-.082-.616-.214-1.222-.335-1.828-.101-.536.01-1.01.435-1.354.233-.192.233-.374.132-.606-.425-.95-.668-1.92-.628-2.98.04-1.131.05-2.252.385-3.343.172-.586.375-1.192.942-1.515.334-.192.75-.253 1.145-.384-.111-.536.243-.829.72-1.07.88-.445 1.833-.607 2.795-.668a9.057 9.057 0 0 1 3.242.364c1.58.485 2.908 1.333 3.404 2.98.294.97.385 2.02.425 3.03.051 1.172-.06 2.344-.1 3.515 0 .101.04.283.1.303.811.243.841.91.71 1.515-.183.86-.477 1.708-.79 2.536-.203.525-.497.687-.993.737-.091.576-.152 1.162-.264 1.727-.121.586-.385 1.091-.922 1.435-.09.06-.162.232-.162.353 0 .374.02.758.071 1.132.01.09.112.192.203.232.121.06.263.07.395.08.658.051.658 0 .638.768-.01.445.162.738.537.96a15.415 15.415 0 0 0 3.678 1.515c1.58.424 3.09 1 4.325 2.131.507.465.851 1.01.932 1.728.061.535.264 1.06.395 1.596.284 1.11.568 2.222.831 3.333.294 1.212.588 2.414.851 3.637.172.787.284 1.585.416 2.373.05.334.08.677.131 1.02.05.313-.08.404-.385.404-2.198-.01-4.407 0-6.605 0H13.554c-.132-.01-.274-.01-.487-.01z" fill="#F88500"></path><path d="M55.951 17.07c-.375-.474-.76-.949-1.135-1.433-.06.05-.131.09-.192.141.182.455.354.91.567 1.343.122.243.182.374-.132.485-.83.273-1.661.566-2.492.849l-.273.09c-.294.112-.77.152-.841.344-.132.364-.05.818-.02 1.232 0 .081.111.182.192.233.74.384 1.327.899 1.672 1.677.162.383.516.585.901.747.649.273 1.267.626 1.915.899.648.273 1.307.525 1.986.737.567.182 1.215.202 1.712.485 1.053.616 1.53 1.606 1.55 2.839.02 1.262.09 2.525.142 3.777l.152 3.283H48.647c-.405-1.707-.8-3.394-1.216-5.08-.213-.85-.456-1.698-.689-2.536-.152-.566-.213-1.162-.466-1.677-.588-1.202-1.63-1.95-2.786-2.575-.364-.192-.74-.364-1.124-.526-.193-.08-.193-.182-.112-.343.385-.758.912-1.374 1.722-1.717.01 0 .02-.01.03-.02.396-.405.102-.91.183-1.364.01-.081-.223-.253-.375-.303a324.091 324.091 0 0 0-3.363-1.131c-.081-.03-.142-.081-.172-.102.233-.565.445-1.11.668-1.656-.03-.02-.06-.05-.09-.07-.426.413-.852.817-1.277 1.232-.02-.02-.04-.04-.071-.061.253-.515.496-1.04.77-1.546.547-1.02.75-2.13.911-3.262.183-1.334.315-2.677.537-4 .142-.879.335-1.748.608-2.596.639-1.95 2.178-2.879 4.042-3.394 1.895-.525 3.587.03 5.157 1.04.425.273.8.677 1.094 1.101.567.808.892 1.718 1.033 2.707.122.849.304 1.677.436 2.526.111.687.203 1.383.274 2.07.151 1.465.496 2.88 1.185 4.202.203.384.375.778.557 1.162a.66.66 0 0 1-.162.192zM.14 33.96a10.351 10.351 0 0 1-.05-3.06c.101-.768.131-1.546.283-2.294.345-1.687.821-3.363 2.33-4.414.76-.525 1.662-.858 2.533-1.212 1.034-.424 2.118-.747 3.15-1.182.963-.404 1.905-.889 2.837-1.374.152-.08.284-.303.325-.484a29.95 29.95 0 0 0 .385-1.9.456.456 0 0 0-.092-.333c-.678-.889-1.114-1.909-1.489-2.96-.03-.08-.01-.171-.04-.252-.142-.363-.03-.868-.649-.96-.172-.03-.364-.363-.425-.585-.101-.384-.112-.798-.162-1.192-.04-.404-.081-.808-.112-1.202-.03-.344.081-.616.385-.808.081-.05.152-.212.152-.324-.04-.777-.121-1.555-.152-2.343-.07-1.717.638-3 2.148-3.869.699-.394 1.337-.889 2.006-1.343.07-.05.142-.08.263-.162.01.233.02.425.04.677.568-.556 1.085-1.07 1.652-1.626.06.505.111.909.162 1.303h.122c.03-.091.06-.182.121-.344.335.142.69.253.993.435.932.535 1.874 1.05 2.756 1.666.901.637 1.317 1.606 1.357 2.677.03.93-.05 1.859-.101 2.788-.01.242.03.414.273.535.304.162.446.465.436.798-.03.728-.101 1.465-.182 2.182-.04.384-.274.616-.74.586-.111.424-.233.859-.344 1.293a6.737 6.737 0 0 1-1.49 2.778c-.324.363-.354.717-.273 1.131.081.414.172.838.233 1.253.05.333.162.565.517.717.658.283 1.296.636 1.935.96.06.03.111.08.172.12-1.074.526-2.148 1.01-3.181 1.566-1.226.657-2.34 1.465-3.222 2.566a6.148 6.148 0 0 0-1.236 2.697c-.192 1.04-.466 2.07-.689 3.111-.142.657-.273 1.313-.405 1.97-.05.242-.07.464-.436.464C8.276 34 4.314 34 .354 34a.996.996 0 0 0-.213-.04z" fill="#F88500"></path>
+         </symbol>
+      
+         <symbol id="tools" viewBox="0 0 42 42">
+            <g clip-path="url(#a)"><path d="M.215 41.785L0 41.57V19.306l.215-.215a.698.698 0 0 1 .503-.215c.265 0 1.14.852 11.335 11.059C22.248 40.14 23.1 41.015 23.1 41.282a.7.7 0 0 1-.215.503L22.67 42H.43l-.215-.215zm20.435-1.208c0-.013-4.331-4.358-9.625-9.657L1.4 21.285v19.314h9.625c5.294 0 9.625-.01 9.625-.022zM4.415 37.58l-.215-.215V29.817l.215-.215a.698.698 0 0 1 .502-.215c.261 0 .615.328 3.985 3.702 3.37 3.373 3.698 3.727 3.698 3.99a.7.7 0 0 1-.215.502l-.214.215H4.63l-.215-.215zm5.735-1.21c0-.012-1.024-1.046-2.275-2.298L5.6 31.797V36.394h2.275c1.251 0 2.275-.01 2.275-.022zm11.55.727v-.704h5.753c3.926 0 5.864-.032 6.103-.098.47-.13 1.217-.876 1.347-1.347a3.96 3.96 0 0 0 .096-.854L35 33.59H18.63l-.215-.215-.215-.215v-6.147l.215-.215.215-.215H35V12.177l-1.4 1.4-1.4 1.399V24.753l-.215.215-.215.215H15.83l-.215-.215c-.212-.213-.215-.235-.215-1.796v-1.58h-.296c-.445 0-1.767-.407-2.46-.756-2.018-1.018-3.45-2.835-4.032-5.114-.263-1.028-.223-2.771.086-3.803.421-1.402 1.02-2.427 1.974-3.38 1.016-1.015 2.26-1.706 3.734-2.074.892-.222 2.657-.198 3.575.048 2.161.582 3.985 2.045 4.955 3.976l.341.679h5.118l3.302-3.307L35 4.554v-.7c0-.386-.044-.858-.097-1.051-.13-.471-.876-1.218-1.347-1.348-.494-.136-24.618-.136-25.112 0-.47.13-1.217.877-1.346 1.348C7.03 3.048 7 5.93 7 12.416v9.263H5.596l.024-9.53.024-9.53C6.154.937 7.042.296 8.269 0H33.73l.59.28c1.025.485 1.838 1.513 1.968 2.485.026.19.066.344.09.344.025 0 .358-.299.741-.665.897-.858 1.29-1.042 2.211-1.037.817.005 1.358.232 1.894.797.541.57.722 1.024.726 1.825.006 1.154-.03 1.204-2.973 4.162L36.4 10.78v15.803H41.571l.214.215.215.215v6.147l-.215.215-.214.215h-5.147l-.045.794c-.039.683-.089.882-.36 1.433-.383.773-.898 1.275-1.703 1.657l-.585.277-6.015.025-6.016.024v-.703zm18.9-7.01v-2.103h-1.4V29.386h-1.4v-1.4h-1.4v1.4H35v-1.4h-1.4v1.4h-1.4v-1.4h-1.4v1.4h-1.4v-1.4H28v1.4h-1.4v-1.4h-1.4v1.4h-1.4v-1.4h-1.4v1.4H21v-1.4h-1.4v4.204h21v-2.102zm-9.8-10.006v-3.7l-.865.864-.866.863-1.944.39c-1.07.215-2.038.367-2.153.339-.114-.029-.274-.155-.356-.28-.143-.219-.134-.306.236-2.21l.384-1.983.874-.898.873-.898H23.71l.056.942c.22 3.737-2.18 6.983-5.877 7.947-.282.073-.642.133-.8.133H16.8v2.19h14v-3.7zm-15.15-8.747c.194-.157.383-.167 3.138-.167 2.586 0 2.925-.016 2.88-.133-.135-.352-.794-1.197-1.311-1.681a6.446 6.446 0 0 0-2.405-1.412c-.588-.196-.817-.224-1.852-.224-1.049 0-1.26.027-1.881.236-1.739.583-2.976 1.653-3.77 3.258-.885 1.789-.876 3.677.026 5.559.341.712.51.942 1.196 1.623 1.016 1.011 2.04 1.563 3.298 1.778l.387.066.044-4.367.044-4.368.206-.168zm2.607 8.553c.868-.316 1.504-.736 2.262-1.494.8-.8 1.259-1.533 1.593-2.54.201-.608.233-.851.238-1.84.003-.626-.022-1.207-.057-1.291-.058-.142-.274-.154-2.778-.154H16.8v7.684l.451-.082c.249-.045.701-.172 1.006-.283zm8.464-2.723c.224-.034.424-.09.445-.124.021-.034-.152-.25-.385-.48-.232-.23-.442-.384-.465-.343-.024.04-.07.232-.103.424a5.998 5.998 0 0 1-.109.517c-.036.122-.014.153.081.117.072-.028.313-.078.536-.111zm7.098-5.822l5.074-5.08-.897-.898-.896-.897-5.096 5.1-5.096 5.102.872.877c.48.482.893.876.919.876.025 0 2.329-2.286 5.12-5.08zm6.42-6.44c.496-.564.489-1.269-.018-1.776-.532-.532-1.337-.486-1.892.108l-.214.23.869.873c.478.48.895.874.927.874.032 0 .18-.139.329-.308zM8.4 3.46v-.7h1.4v1.4H8.4v-.7zm2.8 0v-.7h1.4v1.4h-1.4v-.7zm2.8 0v-.7h1.4v1.4H14v-.7z" fill="#F88500"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h42v42H0z"></path></clipPath></defs>
+         </symbol>
+      
+         <symbol id="wood-cut-icon" viewBox="0 0 45 45">
+            <path d="M22.5 0c-4.36 0-8.59 1.237-12.233 3.577a.845.845 0 0 0-.253 1.175.864.864 0 0 0 1.188.25A20.856 20.856 0 0 1 22.5 1.7c11.46 0 20.782 9.23 20.782 20.573 0 11.345-9.323 20.574-20.782 20.574-11.46 0-20.782-9.23-20.782-20.574 0-5.784 2.481-11.335 6.808-15.228a.844.844 0 0 0 .058-1.201.865.865 0 0 0-1.213-.057C2.687 10 0 16.01 0 22.273c0 12.282 10.093 22.274 22.5 22.274S45 34.555 45 22.274C45 9.991 34.907 0 22.5 0z" fill="#F88500"></path><path d="M37.785 12.17a.864.864 0 0 0-1.19-.233.845.845 0 0 0-.237 1.179 16.296 16.296 0 0 1 2.802 9.158c0 9.094-7.474 16.492-16.66 16.492-9.187 0-16.66-7.398-16.66-16.492C5.84 13.18 13.313 5.78 22.5 5.78c4.382 0 8.52 1.671 11.652 4.705a.865.865 0 0 0 1.214-.013.844.844 0 0 0-.013-1.202C31.899 5.924 27.334 4.08 22.5 4.08c-10.134 0-18.378 8.161-18.378 18.193 0 10.032 8.244 18.193 18.378 18.193 10.133 0 18.378-8.161 18.378-18.193 0-3.616-1.07-7.11-3.093-10.103z" fill="#F88500"></path><path d="M22.5 9.294c-2.83 0-5.525.879-7.794 2.541a.844.844 0 0 0-.179 1.19.864.864 0 0 0 1.201.177 11.378 11.378 0 0 1 6.772-2.207c6.282 0 11.393 5.059 11.393 11.278 0 5.187-3.546 9.687-8.622 10.942a.85.85 0 1 0 .417 1.65c5.842-1.445 9.922-6.623 9.922-12.592 0-7.157-5.881-12.979-13.11-12.979zM15.293 31.009c-2.66-2.154-4.186-5.338-4.186-8.736 0-2.351.724-4.604 2.092-6.515a.845.845 0 0 0-.203-1.185.864.864 0 0 0-1.198.201 12.804 12.804 0 0 0-2.408 7.5c0 3.91 1.755 7.573 4.816 10.051a.86.86 0 0 0 1.208-.12c.3-.363.246-.899-.12-1.196z" fill="#F88500"></path><path d="M29.942 21.424a.854.854 0 0 0-.858.85c0 3.594-2.954 6.518-6.584 6.518-3.63 0-6.584-2.924-6.584-6.518s2.953-6.517 6.584-6.517c.474 0 .859-.38.859-.85s-.385-.85-.86-.85c-4.577 0-8.3 3.686-8.3 8.217 0 4.532 3.723 8.218 8.3 8.218 4.578 0 8.302-3.686 8.302-8.218 0-.47-.384-.85-.858-.85z" fill="#F88500"></path><path d="M22.5 18.817c-1.925 0-3.492 1.55-3.492 3.457 0 1.906 1.567 3.457 3.492 3.457 1.926 0 3.492-1.551 3.492-3.457 0-1.907-1.566-3.457-3.492-3.457zm0 5.214a1.768 1.768 0 0 1-1.775-1.757c0-.97.796-1.757 1.775-1.757.979 0 1.775.788 1.775 1.757 0 .968-.796 1.757-1.775 1.757z" fill="#F88500"></path>
+         </symbol>
+   </svg>
+   </div>
+   <!-- / SVG SPRITE -->
+
+
+   <!-- SCROLL UP --> 
+   <button class="scrollup" id="scroll-up" aria-roledescription="button" aria-label="scroll to top">
+         <span class="scrollup__arrow"></span>
+   </button>
+   <!-- / SCROLL UP --> 
+
+</body>
+</html>

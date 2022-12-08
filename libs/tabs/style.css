@@ -1,0 +1,18 @@
+.tabs__pane {
+   display: none;
+ }
+ .tabs__pane_show {
+   display: block;
+   animation: animationShowTabs .5s linear;
+ }
+
+ @keyframes animationShowTabs {
+   0% {
+      opacity: 0;
+      visibility: hidden;
+   }
+   100% {
+      opacity: 1;
+      visibility: visible;
+   }
+ }

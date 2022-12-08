@@ -1976,7 +1976,181 @@ span.pagination__numbers {
 }
 
 .our-services__footer {
-   padding-block: calc(30px + (54 - 30) * ((100vw - 320px) / (1320 - 320)));;
+   padding-block: calc(30px + (54 - 30) * ((100vw - 320px) / (1320 - 320)));
    background-color: #FAFAFA;
    text-align: center;
+}
+
+/* COMPANY PAGE */
+.about-company {
+   padding-bottom: 35px;
+}
+
+.about-company__tabs {
+   position: relative;
+   row-gap: 20px;
+}
+
+.about-company__tab-nav {
+   --padding: 30px;
+   position: sticky;
+   top: 20px;
+   background-color: var(--light-bg);
+   padding-top: calc(15px + (45 - 15) * ((100vw - 320px) / (1320 - 320)));
+   padding-bottom: calc(5px + (28 - 5) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__tab-nav_title {
+   font-size: 1rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   padding-inline: var(--padding);
+   margin-bottom: 0;
+   line-height: 1.7;
+}
+.about-company__tabs-wrap {
+   padding-block: 27px;
+}
+.about-company__tabs-btn {
+   border: none;
+   background-color: rgba(248, 133, 0, 0);
+   color: #666;
+   width: 100%;
+   text-align: left;
+   padding-inline: var(--padding);
+   padding-block: 5px;
+}
+.about-company__tab-nav .tabs__btn_active {
+   background-color: rgba(248, 133, 0, 1);
+   color: #fff;
+}
+
+.about-company__tabs-content {
+   padding-left: calc(0px + (15 - 0) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__tabs-content p {
+   line-height: 1.7;
+   padding-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1320 - 320)));
+   margin-bottom: 0;
+}
+.about-company_progressive {
+   margin-top: 5px;
+}
+.about-company_progressive img {
+   aspect-ratio: 1 / .625;
+   object-fit: cover;
+   max-width: 100%;
+   will-change: transform;
+}
+.about-company_progressive + p {
+   padding-top: calc(25px + (35 - 25) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__title {
+   font-size: calc(25px + (31 - 25) * ((100vw - 320px) / (1320 - 320)));
+   font-weight: 800;
+   line-height: 1.2;
+   margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1320 - 320)));
+}
+
+.about-company__partners {
+   display: grid;
+   row-gap: calc(20px + (25 - 20) * ((100vw - 320px) / (1320 - 320)));
+   padding-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__partners_item {
+   row-gap: 15px;
+}
+.about-company__partners p {
+   padding-bottom: 1rem;
+}
+.about-company__partners_bg {
+   background-color: var(--dark);
+   border-radius: var(--radius-style);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   aspect-ratio: 1 / .5625;
+   padding: 15px 25px;
+}
+.about-company__partners_bg img {
+   transition: transform var(--transition);
+   max-width: 100%;
+   will-change: transform;
+}
+.about-company__partners_bg:hover img {
+   transform: scale(1.05);
+}
+.about-company__partners_title {
+   font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (1320 - 320)));
+   color: var(--accent);
+   font-weight: 800;
+   line-height: 1.2;
+   text-decoration: none;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+.about-company__partners_title:hover {
+   color: var(--accent);
+   text-decoration: underline;
+}
+
+.about-company__benefits {
+}
+.about-company__benefits_main-title {
+   text-align: center;
+   margin-bottom: 15px;
+}
+.about-company__benefits p {
+   font-size: .8125rem;
+   padding-bottom: 1rem;
+}
+.about-company__benefits_item {
+   text-align: center;
+   padding-block: calc(20px + (30 - 20) * ((100vw - 320px) / (1320 - 320)));
+   display: grid;
+   align-content: space-between;
+   justify-items: center;
+   position: relative;
+}
+.about-company__benefits_item::before {
+   content: '';
+   display: block;
+   width: calc(100% - 20px);
+   height: 1px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+   background-color: var(--light-div);
+}
+.about-company__benefits_icon {
+   --size: 40px;
+   margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__benefits_icon svg {
+   width: var(--size);
+   height: calc(var(--size) + 10px);
+}
+.about-company__benefits_title {
+   font-size: 1.25rem;
+   text-decoration: none;
+   max-width: 230px;
+   margin-bottom: .9rem;
+}
+.about-company__benefits_more {
+   font-size: .9375rem;
+   margin-top: calc(2px + (10 - 2) * ((100vw - 320px) / (1320 - 320)));
+}
+.about-company__benefits_title,
+.about-company__benefits_more {
+   color: var(--text-color);
+   font-weight: 800;
+   display: inline-block;
+   line-height: 1;
+}
+.about-company__benefits_title:hover,
+.about-company__benefits_more:hover {
+   color: var(--accent);
+   text-decoration: underline;
+}
+.about-company__benefits_more {
 }

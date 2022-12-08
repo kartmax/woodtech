@@ -341,10 +341,33 @@ document.addEventListener('DOMContentLoaded', function() {
       item.innerHTML = `${num}${text}`;
    });
 
+   //=====================================================
+   //======================= TABS ========================
+   //=====================================================
+   if(document.querySelectorAll('.tabs').length > 0) {
+      new ItcTabs('.tabs');
+   }
+
 
    //=====================================================
    //=================== SCROLL TO TOP ===================
    //=====================================================
+   function scrollToTop () {
+      if(window.scrollY > 0) {
+         window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+         })
+      }
+   };
+
+   document.addEventListener('click', (e) => {
+      if(e.target.classList.contains('about-company__tabs-btn')) {
+         scrollToTop()
+      }
+   })
+
    const scrollUp  = document.getElementById('scroll-up');
    if(scrollUp) {
       window.addEventListener('scroll', () => {
@@ -352,39 +375,11 @@ document.addEventListener('DOMContentLoaded', function() {
                                : scrollUp.classList.remove('show-scrollup')
       })
 
-      scrollUp.addEventListener('click', () => {
-         window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-         })
-
-         // function scrollToTop(duration) {
-         //    const yStart   = window.scrollY;
-         //    let startAnimationTime = null;
-
-         //    function step (time) {
-         //       if(!startAnimationTime) {
-         //          startAnimationTime = time;
-         //       } 
-               
-         //       const progress = Math.min((time - startAnimationTime) / duration, 1);
-         //       const y = yStart - (progress * yStart);
-
-         //       window.scrollTo(0, -y);
-
-         //       if (y > 0) {
-         //          requestAnimationFrame(step)
-         //       }
-         //    }
-         //    requestAnimationFrame(step)
-         // }
-         // scrollToTop(1000);
-
-         
-
+      document.addEventListener('click', (e) => {
+         if(e.target.closest('#scroll-up')) {
+            scrollToTop();
+         }
       });
-
    };
 
 

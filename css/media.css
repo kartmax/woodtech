@@ -29,6 +29,19 @@
       padding-inline: 22px;
       padding-block: 25px 5px;
    }
+
+   .about-company__benefits_title {
+      font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1320 - 320)));
+   }
+   .about-company__tab-nav{
+      --padding: 15px;
+   }
+   .about-company__tabs-wrap {
+      padding-block: calc(5px + (20 - 5) * ((100vw - 320px) / (1320 - 320)));
+   }
+   .about-company__tabs-content {
+      padding-left: 0;
+   }
 }
 
 /* md <= Large (lg) */
@@ -78,6 +91,9 @@
    .navbar-deep span.top-menu__link, .navbar-deep span.top-menu__link:hover {
       color: rgba(255, 255, 255, .75);
       background-color: #555;
+   }
+   .navbar-deep a.top-menu__link {
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
    }
 
    .menu-toggle {
@@ -161,6 +177,11 @@
       width: 30px;
       height: 3px;
       transform: translate(-50%, 0);
+   }
+
+   .about-company__tabs-btn,
+   .about-company__tab-nav_title {
+      font-size: 0.875rem;
    }
 }
 
