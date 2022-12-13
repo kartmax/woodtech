@@ -228,6 +228,10 @@ form textarea {
    border-radius: var(--radius-style);
    border: 1px solid var(--light-div);
 }
+form input:focus,
+form textarea:focus {
+   border-color: var(--accent);
+}
 /* for iPhone */
 input, textarea {
   box-shadow: none;
@@ -2154,3 +2158,60 @@ span.pagination__numbers {
 }
 .about-company__benefits_more {
 }
+
+
+/* FEEDBACK */
+.feedback {
+   padding-bottom: var(--padding-block-main);
+}
+.feedback__form {
+   max-width: 360px;
+   margin-inline: auto;
+   text-align: center;
+   padding-top: 27px;
+}
+.feedback__form input,
+.feedback__form textarea {
+   margin-block: 7.5px;
+}
+.feedback__form button {
+   margin-top: 20px;
+}
+
+/* OUR CONTACTS */
+.our-contacts {
+   background-color: var(--dark);
+   text-align: center;
+   padding-block: var(--padding-block-main);
+}
+.tabs__our-contacts {
+   background: none;
+   color: var(--text-color);
+   padding-block: 0;
+}
+.tabs__our-contacts .our-contacts__title {
+   color: var(--text-color);
+}
+.our-contacts__title {
+   color: #fff;
+   font-weight: 800;
+   font-size: calc(20px + (29 - 20) * ((100vw - 320px) / (1320 - 320)));
+}
+.our-contacts .adress-line__wrapper {
+   padding-block-start: calc(15px + (20 - 15) * ((100vw - 320px) / (1320 - 320)));
+   padding-block-end: calc(10px + (15 - 10) * ((100vw - 320px) / (1320 - 320)));
+}
+.our-contacts .adress-line {
+   font-weight: 400;
+}
+
+.our-contacts__map {
+   max-width: 930px;
+   margin-inline: auto;
+   aspect-ratio: 1 / .56;
+   border-radius: var(--radius-style);
+   margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (1320 - 320)));
+ }
+ .our-contacts__map .gmnoprint {
+   display: none;
+ }

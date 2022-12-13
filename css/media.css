@@ -248,7 +248,12 @@
       grid-auto-rows: 160px;
       grid-template-columns: repeat(2, 1fr);
    }
+}
 
+@media screen and (max-width: 767px) and (orientation: portrait) {
+   .our-contacts__map {
+      aspect-ratio: 1 / 1.5;
+   }
 }
 
 /* xs <= Small (sm) */

@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Блог компании</title>
+	<title>Наши контакты</title>
 	<meta name="description" content="Компания Woodhouse - Создаём теплую атмосферу Вашего отдыха">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -18,11 +18,6 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
    <!-- / BOOTSTRAP -->
-
-   <!-- LOZY LOADING IMG -->
-   <link rel="stylesheet" href="libs/progressive-image/dist/progressive-image.css">
-   <script src="libs/progressive-image/dist/progressive-image.js" defer></script>
-   <!-- / LOZY LOADING IMG -->
 
    <!-- GSAP -->
    <script src="libs/gsap/dist/gsap.min.js" defer></script>
@@ -73,7 +68,7 @@
                   <li class="top-menu__item"><a href="index.html" class="top-menu__link">Главная</a></li>
                   <li class="top-menu__item"><a href="projects.html" class="top-menu__link">Проекты</a></li>
                   <li class="top-menu__item"><a href="services.html" class="top-menu__link">Услуги</a></li>
-                  <li class="top-menu__item"><span class="top-menu__link">Блог</span></li>
+                  <li class="top-menu__item"><a href="blog.html" class="top-menu__link">Блог</a></li>
                   <li class="top-menu__item"><a href="company.html" class="top-menu__link">Компания</a></li>
                </ul>
             </nav>
@@ -98,103 +93,38 @@
    </div>
    <!-- \ NAVBAR -->
 
-   <!-- BLOG COMPANY -->
-   <section class="blog-company">
-      <div class="container blog-company__container">
+   <!-- FEEDBACK -->
+   <section class="feedback">
+      <div class="container feedback__container">
          <div class="inner-heading">
-            <h2 class="section-inner-title">блог компании</h2>
-            <p>Список новостей компании Woodtech и статей на тему архитектурного дизайна, проектирования и дизайна интерьеров.</p>
+            <h2 class="section-inner-title">Обратная связь</h2>
+            <p>Задайте нам любой вопрос, напишите или сделайте заказ. Наши менеджеры ответят вам в ближайшее время.</p>
          </div>
 
-         <div class="blog-company__body row">
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>12</span> июля</span>
-                     <a href="./images/blog/1.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/1-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
-                  </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Построили потрясающую деревянную лестницу</h4>
-                        <p>Один из самых необыкновенных проектов нашей компании - винтовая деревянная лестница в старинном стиле.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
-                  </div>
-               </div>
-            </div>
+         <form name="feedback-form" class="feedback__form">
+            <input type="text" name="Имя" placeholder="Ваше имя...">
+            <input type="tel" name="Телефон" placeholder="Ваш телефон...">
+            <textarea name="Комментарий" rows="4" placeholder="Комментарий..."></textarea>
+            <input type="hidden" name="form" value="">
+            <button class="button">Отправить</button>
+         </form>
+      </div>
+   </section class>
+   <!--  \ FEEDBACK -->
 
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>02</span> июля</span>
-                     <a href="./images/blog/2.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/2-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
-                  </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>15</span> сентября</span>
-                     <a href="./images/blog/3.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/3-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
-                  </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="blog-item blog-item-noslide col-sm-6 col-lg-4">
-               <div class="blog-item__wrapper">
-                  <div class="blog-item__bg">
-                     <span class="blog-item__data"><span>10</span> ноября</span>
-                     <a href="./images/blog/4.jpg" class="progressive replace blog-item__progressive" tabindex="-1">
-                        <img src="./images/blog/4-tiny.jpg" class="preview blog-item__bg_img" alt="image" width="20px" height="100%" loading="lazy" />
-                     </a>
-                  </div>
-                  <div class="blog-item__body">
-                     <div class="blog-item__text">
-                        <h4 class="blog-item__title">Создание деревянной футуристичной спальни</h4>
-                        <p>Создание уникальнейшего проекта - деревянной спальни в футуристичном стиле заняло у команды Woodtech два месяца.</p>
-                     </div>
-                     <a href="#" class="blog-item__link">Читать полностью</a>
-                  </div>
-               </div>
-            </div>
+   <!-- OUR CONTACTS -->
+   <section class="our-contacts">
+      <div class="container our-contacts__container">
+         <h2 class="our-contacts__title">Наши контакты</h2>
+         <div class="adress-line__wrapper">
+            <a href="https://goo.gl/maps/GsJG4nd5cGm9uXXX8" class="adress-line" title="Харьков, проспект Мира" target="_blank">Харьков, проспект Мира</a>
          </div>
-
-         <nav class="pagination" role="navigation">
-            <div class="screen-reader-text">Навигация по записям блога</div>
-            <div class="pagination__links">
-                <span class="pagination__arrow pagination__prev" href="#">&#8592 Назад</span>
-                <span class="pagination__numbers pagination__current">1</span>
-                <a class="pagination__numbers" href="#">2</a>
-                <a class="pagination__numbers" href="#">3</a>
-                <a class="pagination__arrow pagination__next" href="#">Вперед &#8594</a>
-            </div>
-        </nav>
-
-
+         <a href="tel:+380504443311" class="home-callback__phone phone-big" title="Позвонить...">+38 (050) 444-33-11</a>
+            <div class="our-contacts__map" id="map">
+         </div>
       </div>
    </section>
-   <!--  \ OUR BLOG -->
+   <!-- / OUR CONTACTS -->
 
    <!-- FOOTER -->
    <footer class="footer">
@@ -274,6 +204,33 @@
          <span class="scrollup__arrow"></span>
    </button>
    <!-- / SCROLL UP --> 
+
+   <!-- MAP -->
+   <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXhPjvJW_pTzXqJJf-qeZEFaQJx-wfc1U&amp;callback=initMap" type="text/javascript"></script>
+   <script>   
+      function initMap() {
+       var mapOptions = {
+           zoom: 15,
+           center: new google.maps.LatLng(50.0315579, 36.2218782),
+           styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f1f1f1"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"off"},{"color":"#ffffff"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#dddddd"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#ff9100"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}]
+       };
+
+       var mapElement = document.getElementById('map');
+
+       var map = new google.maps.Map(mapElement, mapOptions);
+
+       var marker = new google.maps.Marker({
+           position: new google.maps.LatLng(50.0315579, 36.2218782),
+           map: map,
+           icon : {
+            url: './images/interface/mapmarker.svg',
+            scaledSize: new google.maps.Size(40, 40)
+            },
+           title: 'WOODTECH'
+       });
+   }
+   </script>
+   <!-- / MAP -->
 
 </body>
 </html>
